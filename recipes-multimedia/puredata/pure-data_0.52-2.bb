@@ -9,7 +9,7 @@ LICENSE = "CLOSED"
 
 DEPENDS += " autoconf m4 alsa-lib"
 
-FILES_${PN} = "${libdir}/pd/ ${bindir}"
+FILES:${PN} = "${libdir}/pd/ ${bindir}"
 
 addtask do_setup before do_configure
 
